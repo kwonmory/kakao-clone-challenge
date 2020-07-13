@@ -2,15 +2,13 @@
 
 카카오 클론 퍼블리싱해보기
 
-## TODO
-
-- [ ] 대화명 추가
-- [ ] 애니메이션 추가
-- [ ] 프로필 추가
+- [사이트 이동](https://kwonmory.github.io/kakao-clone-challenge/)
 
 ## 스택
 
-오로지 html, css
+- html
+- css
+- 0.000001% JS(스크롤)
 
 ## 퍼블리싱 이미지
 
