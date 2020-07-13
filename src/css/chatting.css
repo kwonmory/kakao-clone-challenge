@@ -1,0 +1,227 @@
+.chatting-room {
+  width: 100%;
+}
+
+.chatting-room .status-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.chatting-room .status-bar .status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.chatting-room header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+.chatting-room .header__information__column {
+  display: flex;
+}
+
+.chatting-room .header__information__column img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.chatting-room .header__information__column .detail {
+  margin-left: 10px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatting-room .header__information__column .detail .nickname {
+  margin-bottom: 14px;
+}
+
+.chatting-room .header__information__column .detail .member-count {
+  color: #929292;
+  font-size: 11px;
+}
+
+.chatting-room .header__information__column .detail .member-count .count {
+  margin-left: 3px;
+}
+
+.chatting-room .header__information__column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chatting-room .header__information__column > a {
+  text-align: right;
+  color: #acacac;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding-right: 4px;
+  cursor: pointer;
+}
+.chatting-room .header__information__column .menus {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1px;
+}
+
+.chatting-room .header__information__column .menus i {
+  margin-left: 10px;
+  font-size: 12px;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #acacac;
+  opacity: 0.8;
+  color: #acacac;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.chatting-room .input {
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 18px;
+  max-width: 99%;
+  min-width: 99%;
+  height: 100px;
+}
+
+#chatting-input {
+  all: unset;
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  line-height: 1.38;
+  overflow: hidden;
+}
+
+.chtting-room .input textarea:focus {
+  outline: none;
+}
+
+.chatting-room button {
+  width: 85px;
+  height: 70px;
+  background-color: #fde300;
+  border-radius: 5px;
+  border: 1px solid #fde300;
+  cursor: pointer;
+}
+
+.chatting-room button:focus {
+  outline: none;
+}
+
+.chatting-room .add-menus {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  bottom: 100px;
+}
+
+.chatting-room .add-menus i {
+  color: #a2a2a2;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.chatting-room .add-menus i:last-child {
+  margin-right: 0;
+}
+
+.messages-warpper {
+  overflow: scroll;  
+  height: calc(100% - 200px);
+  background-color: #BDD0DC;
+}
+
+.messages-warpper ul {
+  padding: 20px 10px;
+  position: relative;
+}
+
+.messages-warpper li {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.messages-warpper .out-message {
+  justify-content: flex-end;
+}
+
+.messages-warpper .out-message .message {
+  background-color: #FDE300;
+  padding: 8px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  border-bottom-right-radius: 0;
+}
+
+.messages-warpper .out-message .time {
+  align-self: flex-end;
+  font-size: 10px;
+  opacity: .8;
+  margin-right: 5px;
+}
+
+.messages-warpper .in-message .detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.messages-warpper .in-message .detail .nickname {
+  font-size: 14px;
+  opacity: .7;
+  margin-bottom: 5px;
+}
+
+.messages-warpper .in-message .detail .message-section {
+  padding: 8px 0;
+  display: flex;
+}
+
+.messages-warpper .in-message .detail .message {
+  background-color: #fff;
+  padding: 8px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  border-top-left-radius: 0;
+}
+
+.messages-warpper .in-message .detail .time {
+  font-size: 10px;
+  opacity: .8;
+  align-self: flex-end;
+  margin-left: 5px;
+}
+
+.messages-warpper .in-message img {
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+}

@@ -3,6 +3,7 @@
 @import './index.css';
 @import './more.css';
 @import './chats.css';
+@import './chatting.css';
 
 html {
   width: 100%;
