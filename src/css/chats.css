@@ -23,6 +23,10 @@
   animation: friendAnimation 0.4s ease-in-out forwards;
 }
 
+.chatting-list-warpper .chatting:hover > a .information .detail .nickname {
+  font-size: 15px;
+}
+
 .chatting-list-warpper .chatting a {
   display: flex;
   justify-content: space-between;

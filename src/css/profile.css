@@ -1,0 +1,141 @@
+
+.screen {
+  width: 100%;
+  background-image: url(https://t1.daumcdn.net/cfile/blog/220C1F4E5672811F03);
+  background-size: cover;
+  position: relative;
+}
+
+.header__menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 80px;
+
+}
+.header__menus .header__menus__columns:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+.header__menus .header__menus__columns a {
+  all: unset;
+  font-size: 34px;
+  color: #fff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  transition: width .2s, height .2s, transform .3s;
+}
+
+.header__menus .header__menus__columns a:hover {
+  width: 40px;
+  height: 40px;
+  transform: rotate(360deg);
+}
+
+.header__menus .header__menus__columns:nth-child(1) i{
+  font-size: 25px;
+  color:#fff;
+  cursor: pointer;
+}
+.header__menus .header__menus__columns:nth-child(2) {
+  font-size: 20px;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menus .header__menus__columns:nth-child(2) i {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-full {
+  display: flex;
+}
+
+.main-full .profile__information {
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 90px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-full .profile__information img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: width .5s, height .5s, transform .5s;
+}
+
+.main-full .profile__information img:hover {
+  width: 250px;
+  height: 250px;
+  transform: rotate(360deg);
+}
+
+.main-full {
+  height: calc(100% - 160px);
+}
+
+.main-full .profile__information .nickname {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.main-full .profile__information .messages {
+  color: #fff;
+  font-size: 14px;
+  opacity: .9;
+}
+
+.footer__menus {
+  width: 100%;
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: .2px solid #fff;
+}
+
+.footer__menus .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer__menus .menu i {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+
+}
+
+.footer__menus .menu span {
+  color: #fff;
+  font-size: 14px;
+}

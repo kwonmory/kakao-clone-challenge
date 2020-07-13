@@ -113,6 +113,8 @@
   height: 100px;
 }
 
+
+
 #chatting-input {
   all: unset;
   width: 100%;
@@ -127,6 +129,10 @@
   outline: none;
 }
 
+.chtting-room .input textarea:focus ~ .chatting-room button {
+  opacity: 1;
+}
+
 .chatting-room button {
   width: 85px;
   height: 70px;
@@ -138,7 +144,7 @@
   transition: .3s opacity;
 }
 
-.chatting-room button:focus, .chatting-room button:hover {
+.chatting-room textarea:focus + button {
   outline: none;
   opacity: 1;
 }
@@ -207,23 +213,7 @@
   margin-right: 5px;
 }
 
-@keyframes inAnimation {
-  from {
-    transform: translateX(-250px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 
-@keyframes outAnimation {
-  from {
-    transform: translateX(250px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 
 .messages-warpper .in-message {
   animation: inAnimation .3s ease-in-out forwards;

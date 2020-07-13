@@ -6,3 +6,21 @@
     opacity: 1;
   }
 }
+
+@keyframes inAnimation {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes outAnimation {
+  from {
+    transform: translateX(250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
