@@ -1,0 +1,95 @@
+.main .my-profile {
+  display: flex;
+  padding: 5px 15px;
+}
+
+.main .my-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.my-profile .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.my-profile .information .name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.my-profile .information .email {
+  color: #9b9b9b;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.basic-service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 15px;
+  border-radius: 10px;
+  height: 50px;
+  background-color: #f8f8f8;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.basic-service span {
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.basic-service .count {
+  color: #59a4e4;
+}
+
+.basic-service i {
+  margin-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.basic-service__email,
+.basic-service__calendar {
+  display: flex;
+  align-items: center;
+}
+
+.other-service {
+  padding: 0 25px;
+}
+
+.other-service li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service-information {
+  display: flex; 
+  align-items: center;
+}
+
+.service-information i {
+  font-size: 21px;
+  margin-right: 10px;
+}
+
+.service-information span {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.other-service li .version {
+  color: #a2a2a2;
+  font-size: 14px;
+}

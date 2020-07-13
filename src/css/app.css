@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 @import './reset.css';
 @import './index.css';
+@import './more.css';
 
 html {
   width: 100%;
@@ -84,10 +85,44 @@ body {
   font-size: 22px;
   cursor: pointer;
 }
+.menus .main-menu .badge-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  min-width: 15px;
+  padding:1px 3px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: red;
+  top: -5px;
+  right: -10px;
+  font-size: 6px;
+  font-weight: 600;;
+  color: #fff;
+}
+
+.menus .main-menu .badge-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  min-width: 17px;
+  padding:1px;
+  height: 17px;
+  border-radius: 100%;
+  background-color: red;
+  top: -5px;
+  right: -5px;
+  font-size: 6px;
+  font-weight: 600;;
+  color: #fff;
+}
 
 .main-menu a {
   all:unset;
   color: #8F8785;
+  position: relative;
 }
 .menus .main-menu i {
   padding-bottom: 20px;
