@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>채팅 | 아이폰 PC버전 카카오 클론</title>
-  <link rel="stylesheet" href="src/css/app.css" />
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-    crossorigin="anonymous"
-  />
-</head>
-<body>
-  <nav class="menu-bar">
-    <div class="status-bar">
-      <div class="cancle status"></div>
-      <div class="minimum status"></div>
-      <div class="maximum status"></div>
-    </div>
-    <div class="menus">
-      <div class="main-menu">
-        <a href="index.html">
-          <i class="fas fa-user"></i>
-        </a>
-        <a href="chats.html" class="active">
-          <div class="badge-count">999+</div>
-          <i class="fas fa-comment"></i>
-        </a>
-        <a href="more.html">
-          <div class="badge-new">N</div>
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채팅 | 아이폰 PC버전 카카오 클론</title>
+    <link rel="stylesheet" href="src/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="menu-bar">
+      <div class="status-bar">
+        <div class="cancle status"></div>
+        <div class="minimum status"></div>
+        <div class="maximum status"></div>
       </div>
-      <div class="sub-menu">
-        <i class="fas fa-bell"></i>
-        <i class="fas fa-cog"></i>
+      <div class="menus">
+        <div class="main-menu">
+          <a href="index.html">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="chats.html" class="active">
+            <div class="badge-count">999+</div>
+            <i class="fas fa-comment"></i>
+          </a>
+          <a href="more.html">
+            <div class="badge-new">N</div>
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </div>
+        <div class="sub-menu">
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-cog"></i>
+        </div>
       </div>
+    </nav>
+
+    <main class="main">
+      <header class="header-bar">
+        <div class="header-bar__column">
+          <span class="name">채팅</span>
+          <span class="til"><i class="fas fa-caret-down"></i></span>
+        </div>
+        <span class="header-bar__column-plus">
+          <i class="fas fa-comment-medical"></i>
+        </span>
+      </header>
+      <div class="search-bar">
+        <label for="search"></label>
+        <input id="search" type="text" placeholder="채팅방 이름, 참여자 검색" />
+      </div>
+
+      <div class="chatting-list-warpper">
+        <ul>
+          <li class="chatting">
+            <a href="./chating-room.html">
+              <div class="information">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3L48QRB-AnzPDma-1O3yQ4WfnLO96_zeu_A&usqp=CAU"
+                  alt="채팅방 사진"
+                />
+                <div class="detail">
+                  <span class="nickname">바보들</span>
+                  <span class="message">야 뭐하고 있냐</span>
+                </div>
+              </div>
+              <span class="time">오후 1:30</span>
+            </a>
+          </li>
+          <li class="chatting">
+            <a href="./chating-room.html">
+              <div class="information">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWoyFEtozkmnpogAAKMFAmYEHJo6sKjO4Zxg&usqp=CAU"
+                  alt="채팅방 사진"
+                />
+                <div class="detail">
+                  <span class="nickname">프론트개발자</span>
+                  <span class="message">css Transform에서 크기값 가져</span>
+                </div>
+              </div>
+              <span class="time">오후 1:30</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="screenWarpper">
+      화면을 줄여주세요.
     </div>
-  </nav>
-  <div class="screenWarpper">
-    화면을 줄여주세요.
-  </div>
-</body>
+  </body>
 </html>

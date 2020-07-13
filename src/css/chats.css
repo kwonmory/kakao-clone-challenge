@@ -1,0 +1,59 @@
+.main .header-bar__column .til i{
+  color: #AFAFAF;
+  opacity: .6;
+  margin-left: 2px;
+}
+
+.chatting-list-warpper {
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.chatting a {
+  all:unset;
+  width: 100%;
+}
+
+.chatting-list-warpper .chatting a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.chatting-list-warpper .chatting .information {
+  display: flex;
+}
+
+.chatting-list-warpper .chatting .information .detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.chatting-list-warpper .chatting .information .detail .nickname {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #2D2D2D;
+}
+
+.chatting-list-warpper .chatting .information .detail .message {
+  font-size: 12px;
+  color: #C4C4C4;
+}
+
+.chatting-list-warpper .chatting img {
+  width: 45px;
+  height: 45px;
+  border-radius: 18px;
+}
+
+.chatting-list-warpper .chatting .time {
+  font-size: 12px;
+  color: #C4C4C4;
+  align-self: flex-start;
+}
