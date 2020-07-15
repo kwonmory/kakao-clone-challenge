@@ -20,8 +20,8 @@
         <div class="maximum status"></div>
       </div>
 
-      <header clsss="header__information">
-        <div class="header__information__column">
+      <header clsss="basic-menus">
+        <div class="basic-menus__column">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKVMlYmi_TOce5DU3fRFtjk_0YyNd4rXGLnQ&usqp=CAU"
             alt="프로필 사진"
@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="header__information__column">
+        <div class="basic-menus__column">
           <a href="chats.html"><i class="fas fa-arrow-left"></i></a>
           <div class="menus">
             <i class="fas fa-search"></i>
@@ -44,7 +44,7 @@
         </div>
       </header>
 
-      <section class="messages-warpper">
+      <section class="message-list">
         <ul>
           <li class="in-message">
             <img
@@ -146,25 +146,20 @@
         </ul>
       </section>
 
-      <div class="add-menus">
-        <div class="add-menus__column">
+      <div class="plus-menus">
+        <div class="plus-menus__column">
           <i class="far fa-smile"></i>
           <i class="fas fa-paperclip"></i>
           <i class="fas fa-vote-yea"></i>
         </div>
-        <div class="add-menus__column">
+        <div class="plus-menus__column">
           <i class="fas fa-phone-alt"></i>
           <i class="fas fa-video"></i>
         </div>
       </div>
 
-      <footer class="input">
-        <textarea
-          id="chatting-input"
-          class="message-input"
-          rows="3"
-          cols="10"
-        ></textarea>
+      <footer class="message-input">
+        <textarea id="chatting-textarea" rows="3" cols="10"></textarea>
         <button type="button">전송</button>
       </footer>
     </div>
@@ -174,7 +169,7 @@
     </div>
 
     <script>
-      const el =  document.querySelector('.messages-warpper');
+      const el = document.querySelector('.message-list');
       el.scrollTop = el.scrollHeight;
     </script>
   </body>

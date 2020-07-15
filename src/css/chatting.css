@@ -25,63 +25,63 @@
   padding-bottom: 10px;
 }
 
-.chatting-room .header__information__column {
+.chatting-room .basic-menus__column {
   display: flex;
 }
 
-.chatting-room .header__information__column img {
+.chatting-room .basic-menus__column img {
   width: 50px;
   height: 50px;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.chatting-room .header__information__column .detail {
+.chatting-room .basic-menus__column .detail {
   margin-left: 10px;
   padding-top: 4px;
   display: flex;
   flex-direction: column;
 }
 
-.chatting-room .header__information__column .detail .nickname {
+.chatting-room .basic-menus__column .detail .nickname {
   margin-bottom: 14px;
 }
 
-.chatting-room .header__information__column .detail .member-count {
+.chatting-room .basic-menus__column .detail .member-count {
   color: #929292;
   font-size: 11px;
 }
 
-.chatting-room .header__information__column .detail .member-count .count {
+.chatting-room .basic-menus__column .detail .member-count .count {
   margin-left: 3px;
 }
 
-.chatting-room .header__information__column:nth-child(2) {
+.chatting-room .basic-menus__column:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.chatting-room .header__information__column > a {
+.chatting-room .basic-menus__column > a {
   text-align: right;
   color: #acacac;
   font-size: 20px;
   margin-bottom: 5px;
   padding-right: 4px;
   cursor: pointer;
-  transition: .5s color;
+  transition: 0.5s color;
 }
 
-.chatting-room .header__information__column > a:hover {
+.chatting-room .basic-menus__column > a:hover {
   color: #000;
 }
-.chatting-room .header__information__column .menus {
+.chatting-room .basic-menus__column .menus {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1px;
 }
 
-.chatting-room .header__information__column .menus i {
+.chatting-room .basic-menus__column .menus i {
   margin-left: 10px;
   font-size: 12px;
   width: 23px;
@@ -96,12 +96,12 @@
   cursor: pointer;
 }
 
-.chatting-room .header__information__column .menus i:hover {
+.chatting-room .basic-menus__column .menus i:hover {
   color: #000;
-  transition: .5s color;
+  transition: 0.5s color;
 }
 
-.chatting-room .input {
+.chatting-room .message-input {
   position: fixed;
   background-color: #ffffff;
   bottom: 0;
@@ -113,9 +113,7 @@
   height: 100px;
 }
 
-
-
-#chatting-input {
+#chatting-textarea {
   all: unset;
   width: 100%;
   outline: none;
@@ -125,11 +123,11 @@
   overflow: hidden;
 }
 
-.chtting-room .input textarea:focus {
+.chtting-room .message-input textarea:focus {
   outline: none;
 }
 
-.chtting-room .input textarea:focus ~ .chatting-room button {
+.chtting-room .message-input textarea:focus ~ .chatting-room button {
   opacity: 1;
 }
 
@@ -140,8 +138,8 @@
   border-radius: 5px;
   border: 1px solid #fde300;
   cursor: pointer;
-  opacity: .5;
-  transition: .3s opacity;
+  opacity: 0.5;
+  transition: 0.3s opacity;
 }
 
 .chatting-room textarea:focus + button {
@@ -149,7 +147,7 @@
   opacity: 1;
 }
 
-.chatting-room .add-menus {
+.chatting-room .plus-menus {
   width: 100%;
   padding: 8px 10px;
   background-color: #f8f8f8;
@@ -161,82 +159,80 @@
   bottom: 100px;
 }
 
-.chatting-room .add-menus i {
+.chatting-room .plus-menus i {
   color: #a2a2a2;
   margin-right: 15px;
   cursor: pointer;
-  transition: .5s color;
+  transition: 0.5s color;
 }
 
-.chatting-room .add-menus i:hover {
+.chatting-room .plus-menus i:hover {
   color: #000;
 }
 
-.chatting-room .add-menus i:last-child {
+.chatting-room .plus-menus i:last-child {
   margin-right: 0;
 }
 
-.messages-warpper {
-  overflow: scroll;  
+.message-list {
+  overflow: scroll;
   height: calc(100% - 200px);
-  background-color: #BDD0DC;
+  background-color: #bdd0dc;
 }
 
-.messages-warpper ul {
+.message-list ul {
   padding: 20px 10px;
   position: relative;
 }
 
-.messages-warpper li {
+.message-list li {
   margin-bottom: 10px;
   width: 100%;
   display: flex;
 }
 
-.messages-warpper .out-message {
+.message-list .out-message {
   justify-content: flex-end;
-  animation: outAnimation .3s ease-in-out forwards;
+  animation: outAnimation 0.3s ease-in-out forwards;
 }
 
-.messages-warpper .out-message .message {
-  background-color: #FDE300;
+.message-list .out-message .message {
+  background-color: #fde300;
   padding: 8px 8px;
   border-radius: 10px;
   font-size: 14px;
   border-bottom-right-radius: 0;
 }
 
-.messages-warpper .out-message .time {
+.message-list .out-message .time {
   align-self: flex-end;
   font-size: 10px;
-  opacity: .8;
+  opacity: 0.8;
   margin-right: 5px;
 }
 
-
-
-.messages-warpper .in-message {
-  animation: inAnimation .3s ease-in-out forwards;
+.message-list .in-message {
+  animation: inAnimation 0.3s ease-in-out forwards;
 }
 
-.messages-warpper .in-message .detail {
+.message-list .in-message .detail {
   display: flex;
   flex-direction: column;
   margin-left: 8px;
 }
 
-.messages-warpper .in-message .detail .nickname {
+.message-list .in-message .detail .nickname {
   font-size: 14px;
-  opacity: .7;
+  opacity: 0.7;
   margin-bottom: 5px;
 }
 
-.messages-warpper .in-message .detail .message-section {
+.message-list .in-message .detail .message-section {
   padding: 8px 0;
   display: flex;
 }
 
-.messages-warpper .in-message .detail .message {
+.message-list .in-message .detail .message {
   background-color: #fff;
   padding: 8px 8px;
   border-radius: 10px;
@@ -244,14 +240,14 @@
   border-top-left-radius: 0;
 }
 
-.messages-warpper .in-message .detail .time {
+.message-list .in-message .detail .time {
   font-size: 10px;
-  opacity: .8;
+  opacity: 0.8;
   align-self: flex-end;
   margin-left: 5px;
 }
 
-.messages-warpper .in-message img {
+.message-list .in-message img {
   width: 45px;
   height: 45px;
   border-radius: 15px;
